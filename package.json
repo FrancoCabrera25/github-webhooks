@@ -1,0 +1,27 @@
+{
+    "name": "github-webhooks",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "tsnd --respawn --clear src/app.ts",
+        "build": "rimraf ./dist && tsc",
+        "start": "npm run build && node dist/app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Franco Cabrera",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/express": "^4.17.21",
+        "@types/node": "^20.12.5",
+        "rimraf": "^5.0.5",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.4.4"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "env-var": "^7.4.1",
+        "express": "^4.19.2"
+    }
+}
